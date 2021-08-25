@@ -1,9 +1,9 @@
-FROM node:10
+FROM node:14
 
 RUN apt-get update && \
 	apt-get install -y python python-pip python-dev
 
-ENV ANGULAR_CLI_VERSION=1.15.4
+ENV ANGULAR_CLI_VERSION=12.2.2
 RUN npm install -g \
 	@angular/cli@${ANGULAR_CLI_VERSION}
 
